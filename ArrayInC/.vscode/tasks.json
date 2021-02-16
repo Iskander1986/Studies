@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "gcc.exe build active file",
+            "command": "C:/MinGW/bin/gcc.exe",
+            "args": [                      
+                "-g",
+                "${workspaceFolder}/main.c",
+                "${workspaceFolder}/code/CompareArray.c",
+                "-I${workspaceFolder}/header",
+                "-I${workspaceFolder}/code",
+                "-o",
+                "${workspaceFolder}/${workspaceFolderBasename}.exe"
+            ],
+            "options": {
+                "cwd": "C:/MinGW/bin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
